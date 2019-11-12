@@ -4,7 +4,7 @@ var usernamePage = document.querySelector('#username-page');
 function connect(event) {
     username = document.querySelector('#name').value.trim();
 
-    if(username) {
+    if (username) {
         usernamePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
@@ -25,3 +25,4 @@ function onConnected() {
         {},
         JSON.stringify({sender: username, type: 'JOIN'})
     )
+}
